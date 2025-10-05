@@ -15,8 +15,8 @@ app.use(cors({ origin: 'http://localhost:3000' })); // durante dev; restringir e
 app.use(express.json()); // para futuras POSTs
 app.use(logger); // middleware personalizado que hace console.log
 
-// Servir imágenes estáticas (si las pones en /public/images)
-app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
+// Servir imágenes estáticas
+app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 // Rutas
 app.use('/api/productos', productosRouter);

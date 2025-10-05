@@ -1,12 +1,11 @@
 import React from "react";
-import logo from "../assets/logo.svg"; // vas a copiar tu imagen a /client/src/assets/
 
-const Navbar = () => {
+const navbar = () => {
   return (
     <header>
       <div className="navbar">
         <span className="logo-proteccion">
-          <img src={logo} alt="Logo de la Mueblería Hermanos Jota" />
+           <img src="http://localhost:5000/assets/logo.svg" alt="Logo Hermanos Jota" />
         </span>
       </div>
 
@@ -25,4 +24,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default navbar;

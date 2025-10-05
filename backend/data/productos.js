@@ -4,7 +4,7 @@ const productos = [
     nombre: "Mesa Comedor Pampa",
     precio: 85000,
     descripcion: "Una mesa robusta de madera maciza, ideal para reuniones familiares.",
-    imagen: "img/Mesa-Comedor-Pampa.png",
+    imagen: "http://localhost:5000/assets/Mesa-Comedor-Pampa.png",
     categoria: "Mesas"
   },
   {
@@ -12,7 +12,7 @@ const productos = [
     nombre: "Mesa de Centro Araucaria",
     precio: 42000,
     descripcion: "Elegante mesa de centro con diseño minimalista.",
-    imagen: "img/Mesa-de-Centro-Araucaria.png",
+    imagen: "http://localhost:5000/assets/Mesa-de-Centro-Araucaria.png",
     categoria: "Mesas"
   },
   {
@@ -20,7 +20,7 @@ const productos = [
     nombre: "Sofá Patagonia",
     precio: 120000,
     descripcion: "Sofá amplio y cómodo, tapizado en tela de alta calidad.",
-    imagen: "img/Sofá-Patagonia.png",
+    imagen: "http://localhost:5000/assets/Sofá-Patagonia.png",
     categoria: "Sofás"
   },
   {
@@ -28,7 +28,7 @@ const productos = [
     nombre: "Silla de Trabajo Belgrano",
     precio: 35000,
     descripcion: "Silla ergonómica para largas jornadas de trabajo.",
-    imagen: "img/Silla-de-Trabajo-Belgrano.png",
+    imagen: "http://localhost:5000/assets/Silla-de-Trabajo-Belgrano.png",
     categoria: "Sillas"
   },
   {
@@ -36,7 +36,7 @@ const productos = [
     nombre: "Aparador Uspallata",
     precio: 55000,
     descripcion: "Mueble con gran capacidad de guardado, estilo rústico-moderno.",
-    imagen: "img/Aparador-Uspallata.png",
+    imagen: "http://localhost:5000/assets/Aparador-Uspallata.png",
     categoria: "Almacenamiento"
   },
   {
@@ -44,7 +44,7 @@ const productos = [
     nombre: "Biblioteca Recoleta",
     precio: 49000,
     descripcion: "Biblioteca clásica de madera clara, ideal para salas de lectura.",
-    imagen: "img/Biblioteca-Recoleta.png",
+    imagen: "http://localhost:5000/assets/Biblioteca-Recoleta.png",
     categoria: "Almacenamiento"
   },
   {
@@ -52,7 +52,7 @@ const productos = [
     nombre: "Butaca Mendoza",
     precio: 65000,
     descripcion: "Butaca elegante con estilo minimalista, perfecta para salas de reuniones.",
-    imagen: "img/Butaca-Mendoza.png",
+    imagen: "http://localhost:5000/assets/Butaca-Mendoza.png",
     categoria: "Sillas"
   },
   {
@@ -60,7 +60,7 @@ const productos = [
     nombre: "Escritorio Costa",
     precio: 78000,
     descripcion: "Escritorio moderno con diseño minimalista, perfecto para oficinas.",
-    imagen: "img/Escritorio-Costa.png",
+    imagen: "http://localhost:5000/assets/Escritorio-Costa.png",
     categoria: "Escritorios"
   },
   {
@@ -68,7 +68,7 @@ const productos = [
     nombre: "Mesa de Noche Aconcagua",
     precio: 100000,
     descripcion: "Mesa de noche elegante con diseño funcional, ideal para dormitorios.",
-    imagen: "img/Mesa-de-Noche-Aconcagua.png",
+    imagen: "http://localhost:5000/assets/Mesa-de-Noche-Aconcagua.png",
     categoria: "Mesas"
   },
   {
@@ -76,7 +76,7 @@ const productos = [
     nombre: "Sillas Córdoba",
     precio: 42000,
     descripcion: "Sillas de diseño clásico, perfectas para comedores familiares.",
-    imagen: "img/Sillas-Córdoba.png",
+    imagen: "http://localhost:5000/assets/Sillas-Córdoba.png",
     categoria: "Sillas"
   },
   {
@@ -84,7 +84,7 @@ const productos = [
     nombre: "Sillón Copacabana",
     precio: 42000,
     descripcion: "Sillón de diseño contemporáneo con excelente comodidad.",
-    imagen: "img/Sillón-Copacabana.png",
+    imagen: "http://localhost:5000/assets/Sillón-Copacabana.png",
     categoria: "Sofás"
   }
 ];

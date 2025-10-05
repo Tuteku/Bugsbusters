@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import ProductList from "./components/ProductList";
-import Footer from "./components/Footer";
+import Navbar from "./components/navbar";
+import Hero from "./components/hero";
+import ProductList from "./components/productList";
+import Footer from "./components/footer";
 import "./App.css";
 
 function App() {
