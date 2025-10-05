@@ -1,5 +1,4 @@
-// controllers/productosController.js
-const productos = require('../data/products');
+const productos = require('../data/productos');
 
 // GET /api/productos
 const getAllProductos = (req, res, next) => {

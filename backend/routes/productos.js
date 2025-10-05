@@ -1,4 +1,3 @@
-// routes/productos.js
 const express = require('express');
 const router = express.Router();
 const { getAllProductos, getProductoById } = require('../controllers/productosController');
