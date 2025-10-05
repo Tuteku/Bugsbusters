@@ -1,7 +1,7 @@
 {
   "name": "bugsbugsters",
   "version": "1.0.0",
-  "description": "- https://tuteku.github.io/Grupo-2/\r ### Integrantes:\r - Lucas Rodrigo Figueredo\r - Mateo Quispe\r - Sebastian Scorini Wizenberg",
+  "description": "- https://github.com/Tuteku/Bugsbusters/\r ### Integrantes:\r - Lucas Rodrigo Figueredo\r - Mateo Quispe\r - Sebastian Scorini Wizenberg",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -10,20 +10,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tuteku/Grupo-2.git"
+    "url": "git+https://github.com/Tuteku/Bugsbusters.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tuteku/Grupo-2/issues"
+    "url": "https://github.com/Tuteku/Bugsbusters/issues"
   },
-  "homepage": "https://github.com/Tuteku/Grupo-2#readme",
+  "homepage": "https://github.com/Tuteku/Bugsbusters#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": []
 }
