@@ -71,7 +71,6 @@ h1 {
 /* El contenido principal (main) crece para empujar el footer hacia abajo */
 main {
     flex-grow: 1;
-    margin-top: 48px; /* Puedes ajustar el valor según el alto de tu header */
 }
 
 
@@ -105,9 +104,6 @@ main {
         font-size: 2.5rem;
     }
 
-    main {
-      margin-top: 160px; /* Si el header es fijo y más alto en mobile */
-    }
 }
 /* HEADER Y NAVEGACIÓN*/
 header {
@@ -224,6 +220,7 @@ nav li a:hover {
 
 .hero-image img {
     max-width: 450px;
+    width: 100%; /* Asegura que la imagen sea fluida */
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
@@ -860,7 +857,8 @@ footer .bottom-footer {
   
   /* Agregar padding a <main> para compensar el header fijo */
   main {
-    padding-top: 30px; /* Altura aproximada del header en mobile */
+    padding-top: 160px; /* Altura aproximada del header en mobile */
+    margin-top: 48px; /* Puedes ajustar el valor según el alto de tu header */
   }
   
   .navbar img {
