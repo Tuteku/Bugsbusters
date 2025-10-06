@@ -1,25 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+function Navbar({ carrito }) {
+  const cantidadCarrito = carrito ? carrito.length : 0;
+
   return (
     <header>
-      <div className="navbar">
-        <img src="http://localhost:5000/assets/logo.svg" alt="Logo Hermanos Jota" />
-      </div>
-
-      <nav aria-label="Navegación principal">
-        <ul>
-          <li><a href="#hero">Inicio</a></li>
-          <li><a href="#productos-destacados">Catálogo</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-
-      <a href="#carrito" className="carrito" style={{ textDecoration: "none", color: "inherit" }}>
-        🛒 <span id="cart-count">0</span>
-      </a>
+        <div className="navbar">
+            <Link to="/"><img src="http://localhost:5000/assets/logo.svg" alt="Logo de la Mueblería Hermanos Jota" /></Link>
+        </div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><Link to="/">Inicio</Link></li>
+                <li><Link to="/catalogo">Catálogo</Link></li>
+                <li><Link to="/contacto">Contacto</Link></li>
+            </ul>
+        </nav>
+        <Link to="/carrito" className="carrito">
+            🛒 <span id="cart-count">{cantidadCarrito}</span>
+        </Link>
     </header>
   );
-};
+}
 
 export default Navbar;

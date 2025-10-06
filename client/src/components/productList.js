@@ -1,21 +1,19 @@
 import React from "react";
-import ProductCard from "./productCard.js";
 
-const ProductList = ({ productos }) => {
+function ProductList({ productos, onAddToCart }) {
   return (
-    <section id="productos-destacados">
-      <h2 id="productos-destacados-title">Productos Destacados</h2>
-      {productos.length === 0 ? (
-        <div className="spinner"></div>
-      ) : (
-        <div id="productos-container">
-          {productos.map((p) => (
-            <ProductCard key={p.id} producto={p} />
-          ))}
+    <section className="catalogo-grid">
+      {productos.map((producto) => (
+        <div className="producto" key={producto.id}>
+          <img src={producto.imagen} alt={producto.nombre} />
+          <h3>{producto.nombre}</h3>
+          <p className="descripcion">{producto.descripcion}</p>
+          <p className="precio">${producto.precio}</p>
+          <button onClick={() => onAddToCart(producto)}>Agregar al carrito</button>
         </div>
-      )}
+      ))}
     </section>
   );
-};
+}
 
 export default ProductList;

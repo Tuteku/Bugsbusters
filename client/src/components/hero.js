@@ -1,15 +1,19 @@
 import React from "react";
-const Hero = () => (
-  <section id="hero">
-    <div className="hero-texto">
-      <h1>Muebles con calidad y diseño</h1>
-      <p>Cada pieza cuenta la historia de manos expertas y materiales nobles</p>
-      <a href="#productos-destacados">Ver Catálogo</a>
-    </div>
-    <div className="hero-image">
-      <img src="http://localhost:5000/assets/banner.png" alt="Banner principal" />
-    </div>
-  </section>
-);
+import { Link } from "react-router-dom";
+
+function Hero() {
+  return (
+    <section id="hero">
+      <div className="hero-texto">
+        <h1>Mueblería Hermanos Jota</h1>
+        <p>Calidad, diseño y tradición en cada mueble.</p>
+        <Link to="/catalogo">Ver catálogo</Link>
+      </div>
+      <div className="hero-image">
+        <img src="http://localhost:5000/assets/banner.png" alt="Banner principal" />
+      </div>
+    </section>
+  );
+}
 
 export default Hero;
