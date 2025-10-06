@@ -16,7 +16,7 @@ function App() {
   const { productos, loading } = useProductos();
 
   return (
-    <Router>
+    <Router basename="/Bugsbusters">
       <div className="App">
         <Navbar carrito={carrito} />
         <main>
