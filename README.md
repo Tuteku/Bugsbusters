@@ -23,7 +23,7 @@ La aplicación cuenta con:
 - Frontend: React, React Router, CSS
 - Backend: Node.js, Express
 - Gestión de estado: Hooks personalizados (`useCarrito`, `useProductos`)
-- Despliegue: Vercel (frontend) y backend corriendo local o en hosting)
+- Despliegue: Frontend y backend corriendo local
 
 ---
 
