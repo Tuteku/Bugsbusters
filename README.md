@@ -30,9 +30,12 @@ La aplicación cuenta con:
 ## Arquitectura
 
 /backend --> Servidor Node.js con API REST para productos y carrito
+
 /client --> Aplicación React
 /components --> Componentes reutilizables (Navbar, Footer, Hero, ProductList, Carrito)
+
 /pages --> Páginas del sitio (Inicio, Catalogo, Contacto)
+
 /hooks --> Hooks personalizados (useCarrito, useProductos)
 
 ---
