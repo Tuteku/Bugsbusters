@@ -71,6 +71,7 @@ h1 {
 /* El contenido principal (main) crece para empujar el footer hacia abajo */
 main {
     flex-grow: 1;
+    margin-top: 48px; /* Puedes ajustar el valor según el alto de tu header */
 }
 
 
@@ -95,6 +96,18 @@ main {
         display: flex;
         flex-wrap: wrap;
     }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+      margin-top: 160px; /* Si el header es fijo y más alto en mobile */
+    }
 }
 /* HEADER Y NAVEGACIÓN*/
 header {
@@ -107,14 +120,15 @@ header {
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    min-width: 120px; 
+  display: flex;
+  align-items: center;
 }
 
+
 .navbar img {
-    height: 120px;
-    width: auto;
+  height: 100px; /* Ajusta según tu preferencia */
+  width: auto;
+  display: block;
 }
 
 nav ul {
@@ -731,17 +745,19 @@ footer .bottom-footer {
 }
 .carrito-section {
   max-width: 900px;
-  margin: 2rem auto; /* centra horizontal */
+  margin: 2rem auto;
   padding: 1.5rem;
-  background: transparent; /* Sin fondo */
+  background: transparent;
   border-radius: 19px;
-  box-shadow: none; /* Sin sombra */
+  box-shadow: none;
   text-align: center;
-  color: inherit; /* Color de texto normal */
+  color: inherit;
+  overflow-x: auto; /* Permite scroll horizontal en mobile */
 }
 
 .tabla-carrito {
   width: 100%;
+  min-width: 400px; /* Evita que se achique demasiado */
   border-collapse: collapse;
   margin: 1.5rem auto;
   overflow: hidden;
@@ -801,30 +817,33 @@ footer .bottom-footer {
 }
 
 
+/* Media query para hacer la tabla del carrito responsiva */
 @media (max-width: 768px) {
-  .tabla-carrito {
-    font-size: 0.85rem;
-  }
-  
-  .tabla-carrito th,
-  .tabla-carrito td {
-    padding: 8px 6px;
+  /* Este contenedor permitirá que la tabla se desplace horizontalmente */
+  .tabla-carrito-wrapper {
+    overflow-x: auto;
+    /* Agregamos un pequeño borde para que se vea mejor en el contenedor */
+    border: 1px solid #eee;
+    border-radius: 8px;
   }
 
-  .tabla-carrito img {
-    width: 60px;
-    margin-right: 8px;
-  }
-  
-  .btn-eliminar {
-    padding: 6px 12px;
-    font-size: 0.8rem;
+  .tabla-carrito {
+    min-width: 600px; /* Forzamos un ancho mínimo para que aparezca el scroll */
   }
   
   .carrito-section {
     margin: 1rem;
     padding: 1rem;
   }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 11pt;
+    }
+    .catalogo-grid, #productos-destacados {
+        margin: 1rem;
+    }
 }
 
 /* AUTO-HIDE HEADER PARA MOBILE */
@@ -839,11 +858,10 @@ footer .bottom-footer {
     will-change: transform;
   }
   
-  /* Agregar padding al body para compensar el header fijo */
-  body {
-    padding-top: 160px; /* Ajustar según la altura del header */
+  /* Agregar padding a <main> para compensar el header fijo */
+  main {
+    padding-top: 30px; /* Altura aproximada del header en mobile */
   }
-  
   
   .navbar img {
     height: 80px; /* Reducir tamaño del logo en mobile */
@@ -893,4 +911,46 @@ footer .bottom-footer {
   height: 40px;
   animation: spin 1s linear infinite;
   margin: auto;
+}
+
+/* Nuevos estilos para el carrito en mobile */
+@media (max-width: 700px) {
+  .tabla-carrito {
+    display: none;
+  }
+  .carrito-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .carrito-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .carrito-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  .carrito-card-info {
+    flex: 1;
+    text-align: left;
+  }
+  .carrito-card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 701px) {
+  .carrito-cards {
+    display: none;
+  }
 }
