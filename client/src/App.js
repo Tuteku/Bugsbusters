@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import { useCarrito } from "./hooks/useCarrito";
 import { useProductos } from './hooks/useProductos';
 import Catalogo from './pages/Catalogo';
+import ProductDetail from './pages/ProductDetail';
 import Carrito from './components/Carrito';
 import Contacto from './pages/Contacto';
 import "./App.css";
@@ -63,6 +64,11 @@ function App() {
             <Route
               path="/contacto"
               element={<Contacto />}
+            />
+            {/* Detalle de producto */}
+            <Route
+              path="/producto/:id"
+              element={<ProductDetail agregarProducto={agregarProducto} />}
             />
           </Routes>
         </main>
