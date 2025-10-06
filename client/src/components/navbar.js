@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar({ carrito }) {
-  const cantidadCarrito = carrito ? carrito.length : 0;
+    // Mostrar el total de unidades en el carrito (sumatoria de `cantidad`)
+    const cantidadCarrito = carrito ? carrito.reduce((sum, p) => sum + (p.cantidad || 0), 0) : 0;
 
   return (
     <header>
