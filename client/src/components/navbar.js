@@ -7,7 +7,8 @@ function Navbar({ carrito }) {
   return (
     <header>
         <div className="navbar">
-            <Link to="/"><img src="http://localhost:5000/assets/logo.svg" alt="Logo de la Mueblería Hermanos Jota" /></Link>
+            <Link to="/"><img src={`${process.env.PUBLIC_URL}/assets/logo.svg`} alt="Logo de la Mueblería Hermanos Jota" />
+</Link>
         </div>
         <nav aria-label="Navegación principal">
             <ul>
