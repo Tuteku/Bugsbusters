@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import ProductList from "./components/productList";
-import Footer from "./components/footer"; // Asegúrate de que este componente exista
+import Footer from "./components/footer";
 import { useCarrito } from "./hooks/useCarrito";
 import { useProductos } from './hooks/useProductos';
 import Catalogo from './pages/Catalogo';
 import Carrito from './components/Carrito';
+import Contacto from './pages/Contacto';
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Navbar carrito={carrito} />
         <main>
           <Routes>
+            {/* Página principal */}
             <Route
               path="/"
               element={
@@ -36,6 +38,16 @@ function App() {
                 </>
               }
             />
+
+            {/* Catálogo */}
+            <Route
+              path="/catalogo"
+              element={
+                <Catalogo productos={productos} loading={loading} onAddToCart={agregarProducto} />
+              }
+            />
+
+            {/* Carrito */}
             <Route
               path="/carrito"
               element={
@@ -46,11 +58,11 @@ function App() {
                 />
               }
             />
+
+            {/* Contacto */}
             <Route
-              path="/catalogo"
-              element={
-                <Catalogo productos={productos} loading={loading} onAddToCart={agregarProducto} />
-              }
+              path="/contacto"
+              element={<Contacto />}
             />
           </Routes>
         </main>
