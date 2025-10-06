@@ -1,12 +1,10 @@
 import React from "react";
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <header>
       <div className="navbar">
-        <span className="logo-proteccion">
-           <img src="http://localhost:5000/assets/logo.svg" alt="Logo Hermanos Jota" />
-        </span>
+        <img src="http://localhost:5000/assets/logo.svg" alt="Logo Hermanos Jota" />
       </div>
 
       <nav aria-label="Navegación principal">
@@ -24,4 +22,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

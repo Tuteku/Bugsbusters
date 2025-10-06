@@ -1,5 +1,5 @@
 import React from "react";
-const hero = () => (
+const Hero = () => (
   <section id="hero">
     <div className="hero-texto">
       <h1>Muebles con calidad y diseño</h1>
@@ -12,4 +12,4 @@ const hero = () => (
   </section>
 );
 
-export default hero;
+export default Hero;

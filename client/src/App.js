@@ -1,9 +1,8 @@
-
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import ProductList from "./components/productList";
-import Footer from "./components/footer";
+import Footer from "./components/footer"; // Asegúrate de que este componente exista
 import "./App.css";
 
 function App() {
@@ -17,17 +16,14 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="App">
       <Navbar />
       <main>
         <Hero />
-        <section id="productos-destacados">
-          <h2 id="productos-destacados-title">Productos Destacados</h2>
-          <ProductList productos={productos} />
-        </section>
+        <ProductList productos={productos} />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
