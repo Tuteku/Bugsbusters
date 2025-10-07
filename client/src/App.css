@@ -113,6 +113,17 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ocultar header al hacer scroll hacia abajo */
+@media (max-width: 1024px) {
+    header.header-hidden {
+        transform: translateY(-100%);
+    }
 }
 
 .navbar {
@@ -225,6 +236,22 @@ nav li a:hover {
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
+/* Centrar contenido del hero  */
+.hero-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    justify-content: center; 
+    flex: 1;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* PRODUCTOS DESTACADOS */
 #productos-destacados {
@@ -302,7 +329,7 @@ nav li a:hover {
     background-color: var(--burnt-sienna);
 }
 
-/* Responsive adjustments */
+/* Mejoras al responsive */
 @media (max-width: 700px) {
     #productos-container {
         grid-template-columns: 1fr;
@@ -622,7 +649,7 @@ footer .bottom-footer {
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
     transition: border-color 0.2s;
-    resize: vertical; /* Evita que se pueda redimensionar horizontalmente */
+    resize: vertical; 
 }
 
 .form-contacto input:focus,
